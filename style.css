@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #8e49e8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+::selection {
+  color: #ffff;
+  background: var(--primary-color);
+}
+body {
+  width: 100%;
+  height: 100vh;
+  /* overflow: hidden; */
+  padding: 10px;
+  background: linear-gradient(to bottom, #68eacc 0%, #497be8 100%);
+}
+.wrapper {
+  background: #fff;
+  max-width: 400px;
+  width: 100%;
+  margin: 120px auto;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+.wrapper header {
+  font-size: 30px;
+  font-weight: 600;
+}
+.wrapper .inputField {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  height: 45px;
+}
+.inputField input {
+  width: 85%;
+  height: 100%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 17px;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+}
+.inputField input:focus {
+  border-color: var(--primary-color);
+}
+.inputField button {
+  width: 50px;
+  height: 100%;
+  border: none;
+  color: #fff;
+  margin-left: 3px;
+  font-size: 21px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+  opacity: 0.3;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.inputField button.active:hover,
+.footer button:hover {
+  opacity: 1;
+}
+.inputField button.active {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+#add {
+  background: var(--primary-color);
+}
+#edit {
+  background: #49e85e;
+}
+#cancel {
+  background: #e84949;
+}
+.wrapper .todoList {
+  max-height: 250px;
+  overflow-y: auto;
+}
+.todoList li {
+  position: relative;
+  list-style: none;
+  height: 45px;
+  line-height: 45px;
+  margin-bottom: 8px;
+  background: #f2f2f2;
+  border-radius: 3px;
+  padding: 0 15px;
+  cursor: default;
+  overflow: hidden;
+  display: flex;
+}
+.todoList li .icon {
+  display: flex;
+  position: absolute;
+  width: 90px;
+  right: -90px;
+  transition: all 0.2s ease;
+}
+.todoList li:hover .icon {
+  right: 0px;
+}
+
+.todoList li .icon .icon-item {
+  width: 45px;
+  position: relative;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+  color: #fff;
+}
+
+.delete {
+  background: #e74c3c;
+}
+
+.edit {
+  background: #e7cd3c;
+}
+
+.wrapper .footer {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer a.submit {
+  padding: 6px 10px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  margin-left: 5px;
+  background: var(--primary-color);
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+.footer a:hover {
+  opacity: 1;
+}
+
+.hide {
+  display: none;
+}

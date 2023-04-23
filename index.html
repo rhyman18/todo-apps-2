@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todolist</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/35627982be.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>Aplikasi Todo List</header>
+    <div class="inputField">
+      <input type="text" id="todo" placeholder="Tambahkan todo baru...">
+      <button id="cancel" class="hide active"><i class="fas fa-x"></i></button>
+      <button id="edit" class="hide active"><i class="fas fa-check"></i></button>
+      <button id="add"><i class="fas fa-plus"></i></button>
+    </div>
+    <ul class="todoList" id="list">
+      <!-- data are comes from local storage -->
+    </ul>
+    <div class="footer">
+      <span>Lihat contoh code <a href="https://gist.github.com/nuraskiah/6dc96f1173f6039a5854e6e0711d0636"><strong>di
+            sini</strong></a>.</span>
+      <a class="submit" href="https://airtable.com/shrr45XSEiSZCRzOL">Submit</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

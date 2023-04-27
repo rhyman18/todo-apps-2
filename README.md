@@ -1,6 +1,6 @@
 # Todo List
 
-Membuat todo List sederhana sebagai tugas ke 3 dari sesi zoom Codepolitan. Tidak menggunakan framework (Vanilla js) dan penyimpanan menggunakan local storage.
+Membuat todo List sederhana sebagai tugas ke 3 dari sesi zoom Codepolitan. Tidak menggunakan framework (native javascript) dan penyimpanan menggunakan local storage.
 
 # Deployment Web
 
